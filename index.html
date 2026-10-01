@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SYSTEM BHAI</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1597998275125786');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1597998275125786&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width:100%;
+    min-height:100%;
+}
+
+body{
+    background:#020b13;
+    color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* MAIN CARD */
+
+.page{
+    width:100%;
+    max-width:414px;
+    min-height:100vh;
+
+    padding:27px 20px 30px;
+
+    background:
+    radial-gradient(
+        circle at 50% 15%,
+        rgba(0,190,255,.08),
+        transparent 32%
+    ),
+    #020b13;
+
+    border:1px solid #06405b;
+    border-radius:0 0 18px 18px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* TOP BADGE */
+
+.badge{
+    align-self:center;
+
+    padding:10px 17px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        100deg,
+        #12c9df,
+        #087df5
+    );
+
+    font-size:12px;
+    font-weight:800;
+
+    box-shadow:
+        0 6px 20px rgba(0,163,255,.15);
+}
+
+/* LOGO */
+
+.logo{
+    width:100px;
+    height:100px;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:22px auto 22px;
+
+    border-radius:50%;
+
+    border:2px solid #04c9f4;
+
+    box-shadow:
+        0 0 0 3px rgba(4,201,244,.06),
+        0 0 20px rgba(0,200,255,.12);
+}
+
+/* HEADLINE */
+
+h1{
+    margin:0;
+
+    text-align:center;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:31px;
+    line-height:1.05;
+
+    letter-spacing:.2px;
+}
+
+/* SUBTITLE */
+
+.sub{
+    margin:11px 0 25px;
+
+    text-align:center;
+
+    color:#aab8c5;
+
+    font-size:14px;
+}
+
+/* FEATURES BOX */
+
+.features{
+    background:#09141e;
+
+    border-radius:17px;
+
+    padding:11px 16px 12px;
+
+    margin-bottom:24px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.015);
+}
+
+.item{
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+
+    min-height:36px;
+
+    font-size:14px;
+
+    color:#f2f5f8;
+}
+
+.check{
+    color:#08d5f7;
+
+    font-size:23px;
+
+    font-weight:700;
+
+    line-height:1;
+}
+
+/* TELEGRAM BUTTON */
+
+.join{
+    position:relative;
+
+    overflow:hidden;
+
+    width:100%;
+
+    border:0;
+
+    border-radius:999px;
+
+    padding:17px 18px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            100deg,
+            #06c7dc,
+            #087cf6
+        );
+
+    font-size:14px;
+
+    font-weight:800;
+
+    letter-spacing:.2px;
+
+    cursor:pointer;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    box-shadow:
+        0 8px 24px rgba(0,157,255,.18);
+
+    animation:
+        pulse 2.4s ease-in-out infinite;
+
+    transition:
+        transform .18s ease,
+        filter .18s ease;
+}
+
+.join:hover{
+    transform:translateY(-2px);
+
+    filter:brightness(1.08);
+}
+
+.join:active{
+    transform:scale(.985);
+}
+
+/* BUTTON SHINE */
+
+.join::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-65%;
+
+    width:45%;
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.38),
+            transparent
+        );
+
+    transform:skewX(-20deg);
+
+    animation:
+        shine 2.8s ease-in-out infinite;
+}
+
+/* BUTTON ANIMATIONS */
+
+@keyframes shine{
+
+    0%,45%{
+        left:-65%;
+    }
+
+    75%,100%{
+        left:125%;
+    }
+
+}
+
+@keyframes pulse{
+
+    0%,100%{
+        box-shadow:
+            0 8px 24px
+            rgba(0,157,255,.18);
+    }
+
+    50%{
+        box-shadow:
+            0 10px 30px
+            rgba(0,205,255,.34);
+    }
+
+}
+
+/* DISCLAIMER */
+
+.disclaimer{
+    margin-top:21px;
+
+    padding-top:16px;
+
+    border-top:
+        1px solid #26323b;
+
+    color:#b5c0c9;
+
+    font-size:10.5px;
+
+    line-height:1.7;
+}
+
+.disclaimer b{
+    color:#eef4f8;
+}
+
+/* MOBILE */
+
+@media(max-height:700px){
+
+    .page{
+        padding-top:20px;
+        padding-bottom:22px;
+    }
+
+    .logo{
+        margin-top:17px;
+        margin-bottom:17px;
+    }
+
+    .sub{
+        margin-bottom:18px;
+    }
+
+    .features{
+        margin-bottom:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+    <!-- TOP BADGE -->
+
+    <div class="badge">
+        🔥 VERIFIED TRADING HUB
+    </div>
+
+
+    <!-- SYSTEM ARMY LOGO -->
+
+    <img
+        class="logo"
+        alt="SYSTEM ARMY OFFICIAL"
+        src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4TCEAAAAvAAAAEAcQERGIiP4HAA=="
+    >
+
+
+    <!-- HEADLINE -->
+
+    <h1>
+        SYSTEM BHAI
+    </h1>
+
+
+    <!-- SUBTITLE -->
+
+    <div class="sub">
+        Official Market Analysis &amp; Community
+    </div>
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <div class="item">
+            <span class="check">✓</span>
+            <span>
+                Daily Market Updates &amp; Analysis
+            </span>
+        </div>
+
+        <div class="item">
+            <span class="check">✓</span>
+            <span>
+                Direct Mentor Support &amp; Strategy
+            </span>
+        </div>
+
+        <div class="item">
+            <span class="check">✓</span>
+            <span>
+                100% Free Community Access
+            </span>
+        </div>
+
+    </section>
+
+
+    <!-- TELEGRAM BUTTON -->
+
+    <a
+        class="join"
+        href="https://t.me/+3UeAwukUMXZhMjU1"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        JOIN TELEGRAM
+    </a>
+
+
+    <!-- DISCLAIMER -->
+
+    <div class="disclaimer">
+
+        <b>Disclaimer:</b>
+        This channel/community is strictly for
+        <b>educational purposes only</b>
+        and does not provide financial advice.
+        Trading involves risk.
+        <b>Strictly 18+ Only.</b>
+
+    </div>
+
+</main>
+
+</body>
+</html>
