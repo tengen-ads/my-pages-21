@@ -1,258 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
 <title>SYSTEM BHAI</title>
 
-<!-- Meta Pixel Code -->
+
+<!-- =====================================================
+     META PIXEL
+     PIXEL ID: 1597998275125786
+     ===================================================== -->
+
 <script>
 !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+{
+    if(f.fbq)return;
+
+    n=f.fbq=function()
+    {
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+    };
+
+    if(!f._fbq)f._fbq=n;
+
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
+
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)
+
+}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '1597998275125786');
+
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
+
+
+<noscript>
+<img
+height="1"
+width="1"
+style="display:none"
 src="https://www.facebook.com/tr?id=1597998275125786&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+/>
+</noscript>
+
+<!-- =====================================================
+     END META PIXEL
+     ===================================================== -->
+
 
 <style>
 
+/* RESET */
+
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
-html,body{
+
+/* PAGE */
+
+html,
+body{
     width:100%;
     min-height:100%;
 }
 
+
 body{
     background:#020b13;
-    color:#fff;
-    font-family:Arial,Helvetica,sans-serif;
+    color:#ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     display:flex;
     justify-content:center;
-    align-items:center;
 }
 
-/* MAIN CARD */
+
+/* MAIN CONTAINER */
 
 .page{
+
     width:100%;
     max-width:414px;
+
     min-height:100vh;
 
-    padding:27px 20px 30px;
+    padding:
+        27px
+        20px
+        30px;
 
     background:
-    radial-gradient(
-        circle at 50% 15%,
-        rgba(0,190,255,.08),
-        transparent 32%
-    ),
-    #020b13;
 
-    border:1px solid #06405b;
-    border-radius:0 0 18px 18px;
+        radial-gradient(
+            circle at 50% 12%,
+            rgba(0,190,255,.08),
+            transparent 32%
+        ),
 
-    display:flex;
-    flex-direction:column;
+        #020b13;
+
+    border:
+        1px solid #06405b;
+
+    border-radius:
+        0 0 18px 18px;
 }
+
 
 /* TOP BADGE */
 
 .badge{
-    align-self:center;
 
-    padding:10px 17px;
+    width:max-content;
 
-    border-radius:999px;
+    margin:
+        0 auto;
 
-    background:linear-gradient(
-        100deg,
-        #12c9df,
-        #087df5
-    );
+    padding:
+        10px 17px;
 
-    font-size:12px;
-    font-weight:800;
+    border-radius:
+        999px;
+
+    background:
+
+        linear-gradient(
+            100deg,
+            #12c9df,
+            #087df5
+        );
+
+    font-size:
+        12px;
+
+    font-weight:
+        800;
 
     box-shadow:
-        0 6px 20px rgba(0,163,255,.15);
+        0 6px 20px
+        rgba(0,163,255,.15);
 }
 
-/* LOGO */
+
+/* DP / LOGO */
 
 .logo{
-    width:100px;
-    height:100px;
 
-    object-fit:cover;
+    width:
+        100px;
 
-    display:block;
+    height:
+        100px;
 
-    margin:22px auto 22px;
+    display:
+        block;
 
-    border-radius:50%;
+    margin:
+        22px auto 22px;
 
-    border:2px solid #04c9f4;
+    object-fit:
+        cover;
+
+    border-radius:
+        50%;
+
+    border:
+        2px solid #04c9f4;
 
     box-shadow:
-        0 0 0 3px rgba(4,201,244,.06),
-        0 0 20px rgba(0,200,255,.12);
+
+        0 0 0 3px
+        rgba(4,201,244,.07),
+
+        0 0 20px
+        rgba(0,200,255,.12);
 }
 
-/* HEADLINE */
+
+/* HEADING */
 
 h1{
-    margin:0;
 
-    text-align:center;
+    text-align:
+        center;
 
     font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-    font-size:31px;
-    line-height:1.05;
+    font-size:
+        31px;
 
-    letter-spacing:.2px;
+    line-height:
+        1.05;
+
+    letter-spacing:
+        .2px;
 }
+
 
 /* SUBTITLE */
 
 .sub{
-    margin:11px 0 25px;
 
-    text-align:center;
+    margin:
+        11px 0 25px;
 
-    color:#aab8c5;
+    text-align:
+        center;
 
-    font-size:14px;
+    color:
+        #aab8c5;
+
+    font-size:
+        14px;
 }
+
 
 /* FEATURES BOX */
 
 .features{
-    background:#09141e;
 
-    border-radius:17px;
+    background:
+        #09141e;
 
-    padding:11px 16px 12px;
+    border-radius:
+        17px;
 
-    margin-bottom:24px;
+    padding:
+        11px 16px 12px;
 
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.015);
+    margin-bottom:
+        24px;
 }
+
+
+/* FEATURE ITEM */
 
 .item{
-    display:flex;
 
-    align-items:center;
+    display:
+        flex;
 
-    gap:13px;
+    align-items:
+        center;
 
-    min-height:36px;
+    gap:
+        13px;
 
-    font-size:14px;
+    min-height:
+        36px;
 
-    color:#f2f5f8;
+    font-size:
+        14px;
+
+    color:
+        #f2f5f8;
 }
+
+
+/* CHECK */
 
 .check{
-    color:#08d5f7;
 
-    font-size:23px;
+    color:
+        #08d5f7;
 
-    font-weight:700;
+    font-size:
+        23px;
 
-    line-height:1;
+    font-weight:
+        700;
+
+    line-height:
+        1;
 }
+
 
 /* TELEGRAM BUTTON */
 
 .join{
-    position:relative;
 
-    overflow:hidden;
+    position:
+        relative;
 
-    width:100%;
+    overflow:
+        hidden;
 
-    border:0;
+    display:
+        block;
 
-    border-radius:999px;
+    width:
+        100%;
 
-    padding:17px 18px;
+    border:
+        0;
 
-    color:white;
+    border-radius:
+        999px;
+
+    padding:
+        17px 18px;
+
+    color:
+        #ffffff;
 
     background:
+
         linear-gradient(
             100deg,
             #06c7dc,
             #087cf6
         );
 
-    font-size:14px;
+    font-size:
+        14px;
 
-    font-weight:800;
+    font-weight:
+        800;
 
-    letter-spacing:.2px;
+    letter-spacing:
+        .2px;
 
-    cursor:pointer;
+    cursor:
+        pointer;
 
-    text-align:center;
+    text-align:
+        center;
 
-    text-decoration:none;
+    text-decoration:
+        none;
 
     box-shadow:
-        0 8px 24px rgba(0,157,255,.18);
+        0 8px 24px
+        rgba(0,157,255,.18);
 
     animation:
-        pulse 2.4s ease-in-out infinite;
+        buttonPulse
+        2.4s
+        ease-in-out
+        infinite;
 
     transition:
         transform .18s ease,
         filter .18s ease;
 }
 
-.join:hover{
-    transform:translateY(-2px);
 
-    filter:brightness(1.08);
+/* HOVER */
+
+.join:hover{
+
+    transform:
+        translateY(-2px);
+
+    filter:
+        brightness(1.08);
 }
+
+
+/* CLICK */
 
 .join:active{
-    transform:scale(.985);
+
+    transform:
+        scale(.985);
 }
 
-/* BUTTON SHINE */
+
+/* SHINE */
 
 .join::before{
+
     content:"";
 
-    position:absolute;
+    position:
+        absolute;
 
     top:0;
+
     left:-65%;
 
-    width:45%;
-    height:100%;
+    width:
+        45%;
+
+    height:
+        100%;
 
     background:
+
         linear-gradient(
             90deg,
             transparent,
@@ -260,13 +420,18 @@ h1{
             transparent
         );
 
-    transform:skewX(-20deg);
+    transform:
+        skewX(-20deg);
 
     animation:
-        shine 2.8s ease-in-out infinite;
+        shine
+        2.8s
+        ease-in-out
+        infinite;
 }
 
-/* BUTTON ANIMATIONS */
+
+/* SHINE ANIMATION */
 
 @keyframes shine{
 
@@ -280,15 +445,20 @@ h1{
 
 }
 
-@keyframes pulse{
+
+/* BUTTON PULSE */
+
+@keyframes buttonPulse{
 
     0%,100%{
+
         box-shadow:
             0 8px 24px
             rgba(0,157,255,.18);
     }
 
     50%{
+
         box-shadow:
             0 10px 30px
             rgba(0,205,255,.34);
@@ -296,75 +466,105 @@ h1{
 
 }
 
+
 /* DISCLAIMER */
 
 .disclaimer{
-    margin-top:21px;
 
-    padding-top:16px;
+    margin-top:
+        21px;
+
+    padding-top:
+        16px;
 
     border-top:
         1px solid #26323b;
 
-    color:#b5c0c9;
+    color:
+        #b5c0c9;
 
-    font-size:10.5px;
+    font-size:
+        10.5px;
 
-    line-height:1.7;
+    line-height:
+        1.7;
 }
+
 
 .disclaimer b{
-    color:#eef4f8;
+
+    color:
+        #eef4f8;
 }
 
-/* MOBILE */
+
+/* SMALL HEIGHT PHONES */
 
 @media(max-height:700px){
 
     .page{
-        padding-top:20px;
-        padding-bottom:22px;
+
+        padding-top:
+            20px;
+
+        padding-bottom:
+            22px;
     }
 
     .logo{
-        margin-top:17px;
-        margin-bottom:17px;
+
+        margin-top:
+            17px;
+
+        margin-bottom:
+            17px;
     }
 
     .sub{
-        margin-bottom:18px;
+
+        margin-bottom:
+            18px;
     }
 
     .features{
-        margin-bottom:18px;
+
+        margin-bottom:
+            18px;
     }
 
 }
 
 </style>
+
 </head>
+
 
 <body>
 
+
 <main class="page">
 
-    <!-- TOP BADGE -->
+
+    <!-- BADGE -->
 
     <div class="badge">
         🔥 VERIFIED TRADING HUB
     </div>
 
 
-    <!-- SYSTEM ARMY LOGO -->
+    <!-- =================================================
+         DP / LOGO
+         Uploaded image embedded directly in HTML
+         ================================================= -->
 
     <img
         class="logo"
         alt="SYSTEM ARMY OFFICIAL"
-        src="https://www.image2url.com/r2/default/images/1790871312833-5a648c72-c8e8-45a5-8ea8-9999c7f1addc.png"
+        src="data:image/jpeg;base64,PUT_YOUR_EMBEDDED_IMAGE_DATA_HERE"
     >
 
 
-    <!-- HEADLINE -->
+    <!-- HEADING -->
 
     <h1>
         SYSTEM BHAI
@@ -382,39 +582,74 @@ h1{
 
     <section class="features">
 
+
         <div class="item">
-            <span class="check">✓</span>
+
+            <span class="check">
+                ✓
+            </span>
+
             <span>
                 Daily Market Updates &amp; Analysis
             </span>
+
         </div>
 
+
         <div class="item">
-            <span class="check">✓</span>
+
+            <span class="check">
+                ✓
+            </span>
+
             <span>
                 Direct Mentor Support &amp; Strategy
             </span>
+
         </div>
 
+
         <div class="item">
-            <span class="check">✓</span>
+
+            <span class="check">
+                ✓
+            </span>
+
             <span>
                 100% Free Community Access
             </span>
+
         </div>
+
 
     </section>
 
 
-    <!-- TELEGRAM BUTTON -->
+    <!-- =================================================
+         TELEGRAM BUTTON
+
+         Meta Event Setup Tool can identify this button
+         because it has a visible ID and is a normal link.
+         ================================================= -->
 
     <a
+
+        id="telegramJoinButton"
+
         class="join"
+
         href="https://t.me/+3UeAwukUMXZhMjU1"
+
         target="_blank"
+
         rel="noopener noreferrer"
+
+        onclick="trackTelegramJoin(event)"
+
     >
+
         JOIN TELEGRAM
+
     </a>
 
 
@@ -423,15 +658,47 @@ h1{
     <div class="disclaimer">
 
         <b>Disclaimer:</b>
+
         This channel/community is strictly for
+
         <b>educational purposes only</b>
+
         and does not provide financial advice.
+
         Trading involves risk.
+
         <b>Strictly 18+ Only.</b>
 
     </div>
 
+
 </main>
+
+
+
+<!-- =====================================================
+     BUTTON EVENT
+     ===================================================== -->
+
+<script>
+
+function trackTelegramJoin(event){
+
+    if(
+        typeof window.fbq === 'function'
+    ){
+
+        fbq(
+            'track',
+            'Lead'
+        );
+
+    }
+
+}
+
+</script>
+
 
 </body>
 </html>
